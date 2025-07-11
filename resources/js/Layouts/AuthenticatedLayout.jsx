@@ -73,6 +73,12 @@ export default function AuthenticatedLayout({ header, children }) {
                                         >
                                             Log Out
                                         </Dropdown.Link>
+
+                                        <Dropdown.Link
+                                            href={route('profile.edit')}
+                                        >
+                                            History
+                                        </Dropdown.Link>
                                     </Dropdown.Content>
                                 </Dropdown>
                             </div>

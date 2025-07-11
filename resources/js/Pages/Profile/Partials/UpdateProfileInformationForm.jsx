@@ -52,6 +52,18 @@ export default function UpdateProfileInformation({
 
                     <InputError className="mt-2" message={errors.name} />
                 </div>
+                <div>
+                    <InputLabel htmlFor="lastname" value="Lastname"/>
+                    <TextInput
+                        id="lastname"
+                        className="mt-1 block w-full"
+                        value={data.lastname}
+                        onChange={(e) => setData('lastname', e.target.value)}
+                        required
+                        isFocused
+                        autoComplete="lastname"
+                    />
+                </div>
 
                 <div>
                     <InputLabel htmlFor="email" value="Email" />
